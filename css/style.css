@@ -39,13 +39,17 @@ h3 {
     margin-left: 19px;
     color: #333333;
 }
-.dishes {
+.containermini {
+    display: flex;
+    flex-direction: column;
+}
+.dishes, .drinks, .desserts {
     display: flex;
     width: 414px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-.dish {
+.dish, .drink, .dessert{
     display: flex;
     flex-direction: column;
     background: #FFFFFF;
