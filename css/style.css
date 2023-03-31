@@ -4,14 +4,25 @@
 strong {
     font-weight: bold;
   }
+
 .header {
     background-color: #CF2B2B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 414px;
     height: 92px;
+    position: fixed;
+    z-index: 1;
+    margin-bottom: 92px;
+}
+body {
+    background: #E5E5E5;
+    position: relative;
+}
+.container {
+    padding-top: 113px;
 }
 h1 {
-    font-family: 'Righteous', cursive;
+    font-family: 'Righteous', 'cursive';
     font-style: normal;
     font-weight: 400;
     font-size: 44px;
@@ -42,12 +53,18 @@ h3 {
 .containermini {
     display: flex;
     flex-direction: column;
+    padding-bottom: 25px;
 }
 .dishes, .drinks, .desserts {
     display: flex;
     width: 414px;
-    /* overflow: hidden; */
+     overflow-x: scroll;
+     overflow-y: hidden;
 }
+::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+  }
 
 .dish, .drink, .dessert{
     display: flex;
@@ -62,10 +79,13 @@ h3 {
     align-items: flex-start;
     justify-content: space-evenly;
     padding: 0 14px;
+    position: relative;
+
 }
 .dishes:first-child {
     margin-left: 12px;
 }
+
 img {
     height: 82px;
     width: 144px;
@@ -95,4 +115,40 @@ img {
     font-size: 16px;
     line-height: 19px;
     color: #000000;
+}
+
+.footer {
+    z-index: 5;
+    width: 414px;
+    height: 92px;
+    background-color: white;
+    border: 10px black;
+    position: fixed;
+    position: absolute;
+    
+}
+button {
+    width: 364px;
+height: 61px;
+left: 25px;
+bottom: 16px;
+
+position: fixed;
+background: #CBCBCB;
+border-radius: 50px;
+}
+.selecionado {
+    box-shadow: 0px 0px 0px 5px #32B72F inset;
+}
+.escondido {
+    display: none;
+}
+ion-icon {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+   background: #32B72F;
+   border-radius: 50%;
+   color: white
+   ;
 }
