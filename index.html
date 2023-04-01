@@ -16,6 +16,7 @@
 
 </head>
 <body>
+    <div class="containerpai">
     <div>
         <div class="header">
             <h1>DrivenEats</h1>
@@ -23,41 +24,42 @@
         </div>
     </div>
     <div class="container">
+        
         <div class="containermini">
             <h3>Primeiro, seu prato</h3>
             <div class="dishes">          
                 <div class="dish burger" data-test="dish" onclick="selecionarPrato('.burger')">
                     <img src="media/burguer.jpg">
-                    <p class="title"><strong>Burguer</strong></p>
+                    <p class="title">Burguer</p>
                     <p class="subtitle">Varios hamburguers, escolha o seu</p>
-                    <p class="price"><strong>R$ 30,50</strong></p>
-                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <p class="price">R$ 30,50</p>
+                    <ion-icon name="checkmark-circle-outline" class="burger"></ion-icon>
                 </div>
                 <div class="dish costela" data-test="dish" onclick="selecionarPrato('.costela')">
                     <img src="media/costelabarbecue.jpeg">
-                    <p class="title"><strong>Barbecue Ribs</strong></p>
+                    <p class="title">Barbecue Ribs</p>
                     <p class="subtitle">Costela suína ao molho barbecue</p>
-                    <p class="price"><strong>R$ 60,99</strong></p>
-                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <p class="price">R$ 60,99</p>
+                    <ion-icon name="checkmark-circle-outline" class="costela"></ion-icon>
                 </div>
                 <div class="dish outback" data-test="dish" onclick="selecionarPrato('.outback')">
                     <img src="media/OutbackNYStrip.jpg">
-                    <p class="title"><strong>Carne da casa</strong></p>
+                    <p class="title">Carne da casa</p>
                     <p class="subtitle">carne de costela com dois adicionais</p>
-                    <p class="price"><strong>R$ 64,99</strong></p>
-                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <p class="price">R$ 64,99</p>
+                    <ion-icon name="checkmark-circle-outline" class="outback"></ion-icon>
                 </div>
                 <!-- <div class="dish" data-test="dish">
                     <img src="media/outbackspecial.jpg">
-                    <p class="title"><strong>Carne especial</strong></p>
+                    <p class="title">Carne especial</p>
                     <p class="subtitle">Suculento pedaço de carne temperada</p>
-                    <p class="price"><strong>R$ 80,00</strong></p>
+                    <p class="price">R$ 80,00</p>
                 </div>
                 <div class="dish" data-test="dish">
                     <img src="media/steaktartare.jpg">
-                    <p class="title"><strong>Steak Tartare</strong></p>
+                    <p class="title">Steak Tartare</p>
                     <p class="subtitle">file cru temperado e gema de codorna</p>
-                    <p class="price"><strong>R$ 30,50</strong></p>
+                    <p class="price">R$ 30,50</p>
                 </div> -->
             </div>
         </div>
@@ -66,36 +68,36 @@
             <div class="drinks">          
                 <div class="drink cerveja" data-test="drink" onclick="selecionarBebida('.cerveja')">
                     <img src="media/outback-cerveja.jpg">
-                    <p class="title"><strong>Chopp da casa</strong></p>
+                    <p class="title">Chopp da casa</p>
                     <p class="subtitle">Cerveja direto do barril para você</p>
-                    <p class="price"><strong>R$ 15,20</strong></p>
+                    <p class="price">R$ 15,20</p>
                     <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
                 <div class="drink suco" data-test="drink" onclick="selecionarBebida('.suco')">
                     <img src="media/Sucos-naturais-para-vender.jpg">
-                    <p class="title"><strong>Suco Natural</strong></p>
+                    <p class="title">Suco Natural</p>
                     <p class="subtitle">Varias opções de sucos naturais</p>
-                    <p class="price"><strong>R$ 10,00</strong></p>
+                    <p class="price">R$ 10,00</p>
                     <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
                 <div class="drink refri" data-test="drink" onclick="selecionarBebida('.refri')">
                     <img src="media/latas_de_refrigerantes.jpg">
-                    <p class="title"><strong>Refrigerante em lata</strong></p>
+                    <p class="title">Refrigerante em lata</p>
                     <p class="subtitle">Varias opções de sabores diferentes</p>
-                    <p class="price"><strong>R$ 6,70</strong></p>
+                    <p class="price">R$ 6,70</p>
                     <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
                 <!-- <div class="drink" data-test="drink">
                     <img src="media/milkshaakes.jpg">
-                    <p class="title"><strong>Milk Shakes</strong></p>
+                    <p class="title">Milk Shakes</p>
                     <p class="subtitle">Milk shakes de varios sabores disponiveis</p>
-                    <p class="price"><strong>R$ 30,50</strong></p>
+                    <p class="price">R$ 30,50</p>
                 </div>
                 <div class="drink" data-test="drink">
                     <img src="media/caipirinha-de-limao-tradicional-1200x900.jpg">
-                    <p class="title"><strong>Caipirinha</strong></p>
+                    <p class="title">Caipirinha</p>
                     <p class="subtitle">Drink de cachaça com limão</p>
-                    <p class="price"><strong>R$ 30,50</strong></p>
+                    <p class="price">R$ 30,50</p>
                 </div> -->
             </div>
         </div>
@@ -104,47 +106,49 @@
             <div class="desserts">         
                 <div class="dessert torta" data-test="dessert" onclick="selecionarSobremesa('.torta')">
                     <img src="media/tortaalema.jpeg">
-                    <p class="title"><strong>Torta alemã</strong></p>
+                    <p class="title">Torta alemã</p>
                     <p class="subtitle">Fatia de torta com chocolate e biscoitos</p>
-                    <p class="price"><strong>R$ 14,75</strong></p>
+                    <p class="price">R$ 14,75</p>
                     <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
                 <div class="dessert tiramisu" data-test="dessert" onclick="selecionarSobremesa('.tiramisu')">
                     <img src="media/tiramisu.png">
-                    <p class="title"><strong>Tiramisu</strong></p>
+                    <p class="title">Tiramisu</p>
                     <p class="subtitle">Sobremesa italiana à base de café</p>
-                    <p class="price"><strong>R$ 22,60</strong></p>
+                    <p class="price">R$ 22,60</p>
                     <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
                 <div class="dessert pudim" data-test="dessert" onclick="selecionarSobremesa('.pudim')">
                     <img src="media/mini pudim de copo.jpeg">
-                    <p class="title"><strong>Pudim de copo</strong></p>
+                    <p class="title">Pudim de copo</p>
                     <p class="subtitle">Mini pudim de leite em pote</p>
-                    <p class="price"><strong>R$ 9,30</strong></p>
+                    <p class="price">R$ 9,30</p>
                     <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
                 <!-- <div class="dessert" data-test="dessert">
                     <img src="media/mousse-de-chocolate-zero.jpeg">
-                    <p class="title"><strong>Pave de chocolate</strong></p>
+                    <p class="title">Pave de chocolate</p>
                     <p class="subtitle">Pave de chocolate sem açucar</p>
-                    <p class="price"><strong>R$ 12,50</strong></p>
+                    <p class="price">R$ 12,50</p>
 
                 </div>
                 <div class="dessert" data-test="dessert">
                     <img src="media/minichurros.jpeg">
-                    <p class="title"><strong>Mini churros</strong></p>
+                    <p class="title">Mini churros</p>
                     <p class="subtitle">Porção acompanha doce de leite</p>
-                    <p class="price"><strong>R$ 20,00</strong></p>
+                    <p class="price">R$ 20,00</p>
                 </div> -->
             </div>
         </div>
-    <div class="footer-pai">
-    <div class="footer bntfake">
+    <div class="fundo"></div>    
+    <div class="footer escolher">
         <button>Selecione os 3 itens para fechar o pedido</button>
     </div>
-    <div class="footer btntrue escondido">
-        <button onclick="">Fechar Pedido</button>
+    <div class="footer confirmar escondido">
+        <button onclick="finalizarPedido()">Fechar Pedido</button>
     </div>
+
+</div>
 </div>
     <script src="script.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
