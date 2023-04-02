@@ -70,6 +70,7 @@ h3 {
   }
 
 .dish, .drink, .dessert{
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     background: #FFFFFF;
@@ -132,6 +133,7 @@ img {
     
 }
 button {
+    cursor: pointer;
 width: 364px;
 height: 61px;
 left: 25px;
@@ -148,6 +150,7 @@ text-align: center;
 letter-spacing: 0.018em;
 color: #FFFFFF;
 padding: 0 -50px;
+border-style: none;
 ;
 }
 .confirmar button{
@@ -179,4 +182,65 @@ ion-icon {
    border-radius: 50%;
    color: white;
    z-index: -1;
+}
+
+
+
+/*
+.confirmarPedido {
+    width: 377px;
+    height: 353px;
+    background: white;
+    position: absolute;
+    left: 20px;
+    top: calc(50% - 353px/2 - 0.5px);
+    background: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+letter-spacing: 0.018em;
+color: #FFFFFF;
+z-index: 10;
+
+}
+
+
+
+.comfirm {
+    font-weight: 700;
+}
+.finalizar button {
+    background: #FFFFFF;
+    border-radius: 100px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.018em;
+    width: 333px;
+    height: 52px;
+    color: #50D074;
+    position: relative;
+}
+.organizarbotao {
+    display: flex;
+}
+.nomes {
+    background: red;
+    width: 200px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.precos {
+    background-color: blue;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.finalizar {
+    width: inherit;
+    justify-content: flex-end;
+    display: flex;
 }

@@ -59,12 +59,12 @@ function selecionarBebida(seletor){
 function selecionarSobremesa(seletor){    
     // primeiro vou verificar se existe botao já selecionado
     // buscando um botao com a classe selecionado
-    const botaoSelecionadoAnteriormente = document.querySelector('.dessert .selecionado');
+    const botaoSelecionadoAnteriormente = document.querySelector('.dessert.selecionado');
     console.log(botaoSelecionadoAnteriormente);
     // se existir botao selecionado, 
-    if ( botaoSelecionadoAnteriormente !== null ){
+    if (botaoSelecionadoAnteriormente !== null){
         //remove a classe selecionado desse botao
-        botaoSelecionadoAnteriormente.classList.remove('.selecionado');
+        botaoSelecionadoAnteriormente.classList.remove('selecionado');
     }
     // buscar o novo botqo clicado
     const botao = document.querySelector(seletor);
@@ -102,12 +102,20 @@ function displaybutton() {
     }
 }
 
+function revisarPedido() {
+    document.querySelector(".prato").innerHTML(dish)
+    document.querySelector(".bebida").innerHTML(drink)
+    document.querySelector(".sobremesa").innerHTML(dessert)
+    document.querySelector(".pratop").innerHTML(pricedish)
+    document.querySelector(".bebidap").innerHTML(pricedrink)
+    document.querySelector(".sobremesap").innerHTML(pricedessert)
+}
 
 
 
 function finalizarPedido() {
    soma = Number(pricedish) + Number(pricedessert) + Number(pricedrink);
-  let frase = `Olá, gostaria de fazer o pedido: \n-Prato: ${dish}\n- Bebida: ${drink}\n -Dobremesa: ${dessert}\n Total: R$ ${soma.toFixed(2)}`;
+  let frase = `Olá, gostaria de fazer o pedido: \n-Prato: ${dish}\n- Bebida: ${drink}\n -Sobremesa: ${dessert}\n Total: R$ ${soma.toFixed(2)}`;
   window.open("https://wa.me/91999999999?text=" + frase);
 }
 
