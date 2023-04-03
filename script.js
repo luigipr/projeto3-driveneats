@@ -115,7 +115,11 @@ function revisarPedido() {
 
 function finalizarPedido() {
    soma = Number(pricedish) + Number(pricedessert) + Number(pricedrink);
-  let frase = `Olá, gostaria de fazer o pedido: \n-Prato: ${dish}\n- Bebida: ${drink}\n -Sobremesa: ${dessert}\n Total: R$ ${soma.toFixed(2)}`;
+  let frase = `Olá, gostaria de fazer o pedido: \n
+   -Prato: ${dish}\n 
+   -Bebida: ${drink}\n 
+   -Sobremesa: ${dessert}\n 
+   Total: R$ ${soma.toFixed(2)}`;
   window.open("https://wa.me/91999999999?text=" + frase);
 }
 
