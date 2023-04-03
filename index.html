@@ -30,21 +30,21 @@
             <div class="dishes">          
                 <div class="dish burger" data-test="dish" onclick="selecionarPrato('.burger')">
                     <img src="media/burguer.jpg">
-                    <p class="title">Burguer</p>
+                    <p class="title" data-test="item-name">Burguer</p>
                     <p class="subtitle">Varios hamburguers, escolha o seu</p>
                     <p class="price"  data-test="item-price">R$ 30,50</p>
                     <ion-icon name="checkmark-circle-outline" class="burger"></ion-icon>
                 </div>
                 <div class="dish costela" data-test="dish" onclick="selecionarPrato('.costela')">
                     <img src="media/costelabarbecue.jpeg">
-                    <p class="title">Barbecue Ribs</p>
+                    <p class="title" data-test="item-name">Barbecue Ribs</p>
                     <p class="subtitle">Costela suína ao molho barbecue</p>
                     <p class="price"  data-test="item-price">R$ 60,99</p>
                     <ion-icon name="checkmark-circle-outline" class="costela"></ion-icon>
                 </div>
                 <div class="dish outback" data-test="dish" onclick="selecionarPrato('.outback')">
                     <img src="media/OutbackNYStrip.jpg">
-                    <p class="title">Carne da casa</p>
+                    <p class="title" data-test="item-name">Carne da casa</p>
                     <p class="subtitle">carne de costela com dois adicionais</p>
                     <p class="price"  data-test="item-price">R$ 64,99</p>
                     <ion-icon name="checkmark-circle-outline" class="outback"></ion-icon>
@@ -68,21 +68,21 @@
             <div class="drinks">          
                 <div class="drink cerveja" data-test="drink" onclick="selecionarBebida('.cerveja')">
                     <img src="media/outback-cerveja.jpg">
-                    <p class="title">Chopp da casa</p>
+                    <p class="title" data-test="item-name">Chopp da casa</p>
                     <p class="subtitle">Cerveja direto do barril para você</p>
                     <p class="price"  data-test="item-price">R$ 15,20</p>
                     <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
                 <div class="drink suco" data-test="drink" onclick="selecionarBebida('.suco')">
                     <img src="media/Sucos-naturais-para-vender.jpg">
-                    <p class="title">Suco Natural</p>
+                    <p class="title" data-test="item-name">Suco Natural</p>
                     <p class="subtitle">Varias opções de sucos naturais</p>
                     <p class="price"  data-test="item-price">R$ 10,00</p>
                     <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
                 <div class="drink refri" data-test="drink" onclick="selecionarBebida('.refri')">
                     <img src="media/latas_de_refrigerantes.jpg">
-                    <p class="title">Refrigerante em lata</p>
+                    <p class="title" data-test="item-name">Refrigerante em lata</p>
                     <p class="subtitle">Varias opções de sabores diferentes</p>
                     <p class="price"  data-test="item-price">R$ 6,70</p>
                     <ion-icon name="checkmark-circle-outline"></ion-icon>
@@ -141,32 +141,12 @@
             </div>
         </div>
     <div class="fundo"></div>    
-    <div class="footer escolher">
+    <div class="footer escolher"  data-test="order-btn">
         <button>Selecione os 3 itens para fechar o pedido</button>
     </div>
     <div class="footer confirmar escondido" data-test="order-btn">
         <button onclick="finalizarPedido()">Fechar Pedido</button>
     </div>
-
-
-    <!-- <div class="confirmarPedido">
-        <div class="confirm">Confirme seu pedido</div>
-        <div class="organizarbotao">
-        <div class="nomes">
-            <div class="prato">a</div>
-            <div class="bebida">b</div>
-            <div class="sobremesa">c</div>
-        </div>
-        <div class="precos">
-            <p class="pratop">a</p>
-            <p class="bebidap">b</p>
-            <p class="sobremesap">c</p>
-        </div>
-    </div>
-        <div class="finalizar">
-         <button onclick="finalizarPedido()">Tudo certo, pode pedir!</button>
-         <p>cancelar</p>
-        </div> -->
     </div>
 </div>
 </div>
